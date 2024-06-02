@@ -24,30 +24,45 @@ public class CuentaSocio {
             this.numeroCuenta = numeroCuenta;
         }
     }
-    
-    //getter  accesadores 
-        public int getTotalPagado() {
+
+    public int getNumeroCuenta() {
+        return numeroCuenta;
+    }
+
+    public void setNumeroCuenta(int numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
+
+    public int getTotalPagado() {
         return totalPagado;
     }
 
+    public void setTotalPagado(int totalPagado) {
+        this.totalPagado = totalPagado;
+    }
 
     public int getNumCuotasCanceladas() {
         return numCuotasCanceladas;
     }
 
+    public void setNumCuotasCanceladas(int numCuotasCanceladas) {
+        this.numCuotasCanceladas = numCuotasCanceladas;
+    }
 
     public int getNumCuotasporCancelar() {
         return numCuotasporCancelar;
     }
-    
-    
-    //customer metodos
-    public void pagarCuotas(int monto){
-        totalPagado += monto;
-        numCuotasCanceladas++;
+
+    public void setNumCuotasporCancelar(int numCuotasporCancelar) {
+        this.numCuotasporCancelar = numCuotasporCancelar;
+    }
+
+    @Override
+    public String toString() {
+        return "CuentaSocio{" + "numeroCuenta=" + numeroCuenta + ", totalPagado=" + totalPagado + ", numCuotasCanceladas=" + numCuotasCanceladas + ", numCuotasporCancelar=" + numCuotasporCancelar + '}';
     }
     
-   
+ 
     
 
     
