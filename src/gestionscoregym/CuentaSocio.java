@@ -22,7 +22,7 @@ public class CuentaSocio {
         return numeroCuenta;
     }
 
-    public void int setNumerocuenta(int numeroVuenta) [
+    public void setNumerocuenta(int numeroVuenta) [
         this.numerocuenta = numeroCuenta;
     }
 
