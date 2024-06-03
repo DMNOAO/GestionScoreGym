@@ -146,5 +146,10 @@ public class Socio {
     public void setCuentaSocio(CuentaSocio cuentaSocio) {
         this.cuentaSocio = cuentaSocio;
     }
+    public bolean validarRut (String rut){
+        if (rut.length() >=11 && rut.length() <=12){
+            return true;
+        } else {
+            return false;
 }
 
