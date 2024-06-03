@@ -9,58 +9,52 @@ package gestionscoregym;
  * @author nyxfem
  */
 public class CuentaSocio {
-    private int numeroCuenta, totalPagado, numCuotasCanceladas, numCuotasporCancelar;
-    
-    //constructores sin y con parametros
-    public CuentaSocio(int numeroCuenta, int totalPagado, int numCuotasCanceladas, int numCuotasporCancelar) {
-        this.numeroCuenta = numeroCuenta;
-        this.totalPagado = totalPagado;
-        this.numCuotasCanceladas = numCuotasCanceladas;
-        this.numCuotasporCancelar = numCuotasporCancelar;
-    }
-
-
-    public void sumarTotalPagado(int monto){
-        this.totalPagado += monto;
+    private int numeroCuenta, saldo, valorCuota,cuota;
+   
+    public Cuenta(int numeroCuenta, int saldo, int valorcuota, int cuota) {
+        this.numeroCuenta = numerocuenta;
+        this.saldo =0;
+        this.valorcuota = 57800;
+        this.cuota = 0;
     }
 
     public int getNumeroCuenta() {
         return numeroCuenta;
     }
 
-    public void setNumeroCuenta(int numeroCuenta) {
-        this.numeroCuenta = numeroCuenta;
+    public void int setNumerocuenta(int numeroVuenta) [
+        this.numerocuenta = numeroCuenta;
     }
 
-    public int getTotalPagado() {
-        return totalPagado;
+    public int getSaldo() {
+        return saldo;
     }
 
-    public void setTotalPagado(int totalPagado) {
-        this.totalPagado = totalPagado;
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
     }
 
-    public int getNumCuotasCanceladas() {
-        return numCuotasCanceladas;
+    public int getvalorCuota() {
+        return valorCuota;
     }
 
-    public void setNumCuotasCanceladas(int numCuotasCanceladas) {
-        this.numCuotasCanceladas = numCuotasCanceladas;
+    public void setvalorCuota(int valorcuota) {
+        this.valorCuota = valorCuota;
+    }
+    public int getvalorCuota() {
+        return valorCuota;
     }
 
-    public int getNumCuotasporCancelar() {
-        return numCuotasporCancelar;
+    public void setCuota(int cuota) {
+        this.cuota = cuota;
     }
 
-    public void setNumCuotasporCancelar(int numCuotasporCancelar) {
-        this.numCuotasporCancelar = numCuotasporCancelar;
-    }
 
-    @Override
-    public String toString() {
-        return "CuentaSocio{" + "numeroCuenta=" + numeroCuenta + ", totalPagado=" + totalPagado + ", numCuotasCanceladas=" + numCuotasCanceladas + ", numCuotasporCancelar=" + numCuotasporCancelar + '}';
-    }
+}
+
+        
     
+
  
     
 
