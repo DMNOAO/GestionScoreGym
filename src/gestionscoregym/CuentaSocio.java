@@ -13,16 +13,15 @@ public class CuentaSocio {
     
     //constructores sin y con parametros
     public CuentaSocio(int numeroCuenta, int totalPagado, int numCuotasCanceladas, int numCuotasporCancelar) {
-        this.numeroCuenta = 0;
-        this.totalPagado = 0;
-        this.numCuotasCanceladas = 0;
-        this.numCuotasporCancelar = 0;
+        this.numeroCuenta = numeroCuenta;
+        this.totalPagado = totalPagado;
+        this.numCuotasCanceladas = numCuotasCanceladas;
+        this.numCuotasporCancelar = numCuotasporCancelar;
     }
 
-    public CuentaSocio(int numeroCuenta) {
-        if(numeroCuenta >= 1 && numeroCuenta <= 9){
-            this.numeroCuenta = numeroCuenta;
-        }
+
+    public void sumarTotalPagado(int monto){
+        this.totalPagado += monto;
     }
 
     public int getNumeroCuenta() {
