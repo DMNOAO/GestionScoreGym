@@ -32,14 +32,7 @@ public class Socio {
         this.cuentaSocio = cuentaSocio;
     }
    
-    //customer metodo
-    public void pagarCuota(int monto){
-        if(monto <= 0){
-            System.out.println("ingrese un monto valido mayor a cero");
-        }else{
-           cuentaSocio.pagarCuota(monto); 
-        }
-    }
+  
     
     public void consultarCuotas(){
         System.out.println("Número de cuotas pagadas: " + cuentaSocio.getNumCuotasCanceladas());
@@ -64,7 +57,8 @@ public class Socio {
         System.out.println("Número de cuotas por cancelar: " + cuentaSocio.getNumCuotasporCancelar());
         
     }
-
+ 
+    }
     public String getRut() {
         return rut;
     }
